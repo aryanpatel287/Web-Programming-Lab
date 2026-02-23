@@ -20,7 +20,8 @@ Web Programming lab practicals for Semester 6, Computer Engineering.
 
 ```
 Lab/
-├── docs/
+├── index.html
+├── style.css
 ├── Practical1/
 ├── Practical2/
 └── Practical3/
@@ -28,4 +29,4 @@ Lab/
 
 ## Hosting
 
-GitHub Pages is served from the **`docs/`** folder (`Settings → Pages → Branch: main / docs`).
+GitHub Pages is served from the **root** (`Settings → Pages → Branch: main / (root)`).
