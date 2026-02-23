@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 1px solid #111111;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 8px;
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 12px;
+    border: 1px solid #111111;
+    color: #111111;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+main {
+    flex: 1;
+    max-width: 900px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #888888;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #dddddd;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 28px 24px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    border-color: #111111;
+    box-shadow: 4px 4px 0px #111111;
+}
+
+.card-number {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #aaaaaa;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #111111;
+}
+
+.card-desc {
+    font-size: 0.85rem;
+    color: #666666;
+    line-height: 1.6;
+}
+
+.card-link {
+    margin-top: 10px;
+    font-size: 0.82rem;
+    color: #111111;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.card-link::after {
+    content: '→';
+    transition: transform 0.2s;
+}
+
+.card:hover .card-link::after {
+    transform: translateX(4px);
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 0.8rem;
+    color: #aaaaaa;
+    border-top: 1px solid #dddddd;
+}

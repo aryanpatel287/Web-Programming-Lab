@@ -1,0 +1,167 @@
+<!-- 
+Name : Patel Aryan Mahendrakumar
+Roll No : 230180107032
+Batch : A
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Event Registration</title>
+</head>
+
+<body>
+
+    <p><a href="../docs/index.html">&#8592; Back to Home</a></p>
+
+    <h1>Student Event Registration Form</h1>
+    <p>Fill in the details below to register for the event. Fields marked with <strong>*</strong> are required.</p>
+
+    <form action="#" method="post">
+
+        <!-- ===== PERSONAL INFORMATION ===== -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name *</label><br />
+            <input type="text" id="fullname" name="fullname" placeholder="e.g. Aryan Patel" pattern="[A-Za-z ]{3,50}"
+                title="Only letters and spaces, 3–50 characters" required /><br /><br />
+
+            <label for="email">Email Address *</label><br />
+            <input type="email" id="email" name="email" placeholder="e.g. aryan@gmail.com" required /><br /><br />
+
+            <label for="phone">Phone Number *</label><br />
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 9876543210" pattern="[6-9][0-9]{9}"
+                title="Enter a valid 10-digit Indian mobile number" required /><br /><br />
+
+            <label for="dob">Date of Birth *</label><br />
+            <input type="date" id="dob" name="dob" required /><br /><br />
+
+            <label for="gender">Gender *</label><br />
+            <input type="radio" id="male" name="gender" value="male" required /> <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" /> <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" /> <label for="other">Other</label>
+            <br /><br />
+
+            <label for="tshirt">Favourite T-Shirt Color</label><br />
+            <input type="color" id="tshirt" name="tshirt" value="#4a90d9" /><br /><br />
+
+        </fieldset>
+
+        <br />
+
+        <!-- ===== ACADEMIC INFORMATION ===== -->
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="enroll">Enrollment Number *</label><br />
+            <input type="text" id="enroll" name="enroll" placeholder="e.g. 230180107XXX" pattern="[0-9]{12}"
+                title="Enter your 12-digit enrollment number" required /><br /><br />
+
+            <label for="branch">Branch *</label><br />
+            <select id="branch" name="branch" required>
+                <option value="">-- Select Branch --</option>
+                <option value="CE">Computer Engineering</option>
+                <option value="EC">Electronics &amp; Communication</option>
+                <option value="ME">Mechanical Engineering</option>
+                <option value="CV">Civil Engineering</option>
+                <option value="EE">Electrical Engineering</option>
+            </select><br /><br />
+
+            <label for="semester">Current Semester *</label><br />
+            <input type="number" id="semester" name="semester" min="1" max="8" placeholder="e.g. 6"
+                required /><br /><br />
+
+            <label for="cgpa">CGPA</label><br />
+            <input type="number" id="cgpa" name="cgpa" min="0" max="10" step="0.01"
+                placeholder="e.g. 8.50" /><br /><br />
+
+        </fieldset>
+
+        <br />
+
+        <!-- ===== EVENT DETAILS ===== -->
+        <fieldset>
+            <legend>Event Details</legend>
+
+            <label for="event">Select Event *</label><br />
+            <select id="event" name="event" required>
+                <option value="">-- Select Event --</option>
+                <optgroup label="Technical">
+                    <option value="hackathon">Hackathon</option>
+                    <option value="codingcontest">Coding Contest</option>
+                    <option value="projectexpo">Project Expo</option>
+                    <option value="workshop">Workshop</option>
+                </optgroup>
+                <optgroup label="Non-Technical">
+                    <option value="culturalnight">Cultural Night</option>
+                    <option value="sportsday">Sports Day</option>
+                    <option value="debate">Debate Competition</option>
+                </optgroup>
+            </select><br /><br />
+
+            <label for="teamsize">Team Size</label><br />
+            <input type="number" id="teamsize" name="teamsize" min="1" max="10" placeholder="e.g. 4" /><br /><br />
+
+            <label>Skills / Areas of Interest</label><br />
+            <input type="checkbox" id="webdev" name="skills" value="webdev" /> <label for="webdev">Web
+                Development</label><br />
+            <input type="checkbox" id="ml" name="skills" value="ml" /> <label for="ml">Machine Learning</label><br />
+            <input type="checkbox" id="uiux" name="skills" value="uiux" /> <label for="uiux">UI/UX Design</label><br />
+            <input type="checkbox" id="android" name="skills" value="android" /> <label for="android">Android
+                Development</label><br />
+            <input type="checkbox" id="cp" name="skills" value="cp" /> <label for="cp">Competitive
+                Programming</label><br />
+            <br />
+
+            <label for="portfolio">Portfolio / GitHub URL</label><br />
+            <input type="url" id="portfolio" name="portfolio"
+                placeholder="https://github.com/yourusername" /><br /><br />
+
+        </fieldset>
+
+        <br />
+
+        <!-- ===== ADDITIONAL INFORMATION ===== -->
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="experience">Previous Event Experience</label><br />
+            <textarea id="experience" name="experience" rows="4" cols="50"
+                placeholder="Briefly describe any hackathons, competitions, or events you have participated in..."
+                maxlength="500"></textarea><br /><br />
+
+            <label for="expectations">What do you expect from this event?</label><br />
+            <textarea id="expectations" name="expectations" rows="4" cols="50"
+                placeholder="Write your expectations here..." maxlength="500"></textarea><br /><br />
+
+            <label for="heardFrom">How did you hear about this event? *</label><br />
+            <select id="heardFrom" name="heardFrom" required>
+                <option value="">-- Select --</option>
+                <option value="social">Social Media</option>
+                <option value="friend">Friend / Classmate</option>
+                <option value="notice">College Notice Board</option>
+                <option value="faculty">Faculty</option>
+                <option value="other">Other</option>
+            </select><br /><br />
+
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms">I agree to the terms and conditions of the event. *</label><br /><br />
+
+        </fieldset>
+
+        <br />
+
+        <!-- ===== FORM ACTIONS ===== -->
+        <input type="submit" value="Register Now" />
+        &nbsp;
+        <input type="reset" value="Clear Form" />
+
+    </form>
+
+</body>
+
+</html>

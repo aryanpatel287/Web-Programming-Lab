@@ -1,0 +1,31 @@
+# WP Lab – Aryan Patel
+
+Web Programming lab practicals for Semester 6, Computer Engineering.
+
+**Roll No:** 230180107032 &nbsp;|&nbsp; **Batch:** A
+
+🔗 **[View Live](https://yourusername.github.io/your-repo-name/)**
+
+---
+
+## Practicals
+
+| # | Title | File |
+|---|-------|------|
+| 1 | HTML Resume | [Practical1/](Practical1/Practical1_HTMLResume.html) |
+| 2 | Class Timetable | [Practical2/](Practical2/Practical2_ClassTimetable.html) |
+| 3 | Student Event Registration Form | [Practical3/](Practical3/Practical3_StudentEventRegistration.html) |
+
+## Structure
+
+```
+Lab/
+├── docs/               ← GitHub Pages root (index + CSS)
+├── Practical1/
+├── Practical2/
+└── Practical3/
+```
+
+## Hosting
+
+GitHub Pages is served from the **`docs/`** folder (`Settings → Pages → Branch: main / docs`).
