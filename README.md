@@ -4,7 +4,7 @@ Web Programming lab practicals for Semester 6, Computer Engineering.
 
 **Roll No:** 230180107032 &nbsp;|&nbsp; **Batch:** A
 
-🔗 **[View Live](https://yourusername.github.io/your-repo-name/)**
+🔗 **[View Live](https://aryanpatel287.github.io/Web-Programming-Lab/)**
 
 ---
 
@@ -20,7 +20,7 @@ Web Programming lab practicals for Semester 6, Computer Engineering.
 
 ```
 Lab/
-├── docs/               ← GitHub Pages root (index + CSS)
+├── docs/
 ├── Practical1/
 ├── Practical2/
 └── Practical3/
