@@ -11,220 +11,288 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aryan Patel - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+
+        body {
+            margin: 0;
+            background-color: #f6f2e9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            color: #111;
+        }
+
+        .top-bar,
+        .resume-container {
+            width: min(900px, 100%);
+        }
+
+        .resume-container {
+            background-color: #ffffff;
+            border: 1px solid #e5e2d8;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            padding: 0.5rem;
+        }
+
+        header {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
 </head>
 
-<body bgcolor="#f4f4f4" text="#1a1a1a" link="#0055aa" vlink="#551a8b" leftmargin="40" rightmargin="40" topmargin="20">
+<body>
 
-    <p><a href="../index.html">&#8592; Back to Home</a></p>
+    <div class="top-bar"><a class="home-button" href="../index.html"><i class="ri-arrow-left-line"></i> Back to Home</a></div>
 
-    <!-- Global font wrapper applied once for entire page -->
-    <font face="Arial, sans-serif" size="3">
+    <div class="resume-container">
 
-        <!-- HEADER -->
-        <header align="center">
+    <!-- HEADER -->
+    <header>
 
-            <h1>
-                <font face="Georgia, Times New Roman, serif" size="7" color="#1a1a2e">
-                    <b>Aryan Patel</b>
-                </font>
-            </h1>
+        <h1>Aryan Patel</h1>
 
-            <nav>
-                <a href="mailto:aryanpatel.me@gmail.com">aryanpatel.me@gmail.com</a>
-                &nbsp;|&nbsp;
-                <a href="https://www.linkedin.com/in/aryan-patel28/" target="_blank">LinkedIn</a>
-                &nbsp;|&nbsp;
-                <a href="https://github.com/aryanpatel287" target="_blank">GitHub</a>
-            </nav>
+        <nav class="contact-info">
+            <a href="mailto:aryanpatel.me@gmail.com">aryanpatel.me@gmail.com</a>
+            &nbsp;|&nbsp;
+            <a href="https://www.linkedin.com/in/aryan-patel28/" target="_blank">LinkedIn</a>
+            &nbsp;|&nbsp;
+            <a href="https://github.com/aryanpatel287" target="_blank">GitHub</a>
+        </nav>
 
-            <hr color="#1a1a2e" size="3" width="80%" />
+        <hr />
 
-        </header>
+    </header>
 
-        <!-- MAIN CONTENT -->
-        <main>
+    <!-- MAIN CONTENT -->
+    <main style="    
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    ">
 
-            <!-- Education -->
-            <section>
-                <h2><font color="#1a1a2e">Education</font></h2>
-                <hr color="#cccccc" size="1" />
-                <blockquote>
-                    <article>
-                        <h3>Government Engineering College, Dahod</h3>
-                        <p><strong>Degree:</strong> <abbr title="Bachelor of Engineering">B.E.</abbr>, Computer Engineering</p>
-                        <p><strong>Location:</strong> <em>Dahod, Gujarat</em></p>
-                        <p><strong>Duration:</strong> <time datetime="2023">2023</time> &ndash; <time>Present</time></p>
-                    </article>
-                </blockquote>
-            </section>
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <hr />
+            <blockquote>
+                <article>
+                    <h3>Government Engineering College, Dahod</h3>
+                    <p><strong>Degree:</strong> <abbr title="Bachelor of Engineering">B.E.</abbr>, Computer Engineering
+                    </p>
+                    <p><strong>Location:</strong> <em>Dahod, Gujarat</em></p>
+                    <p><strong>Duration:</strong> <time datetime="2023">2023</time> &ndash; <time>Present</time></p>
+                </article>
+            </blockquote>
+        </section>
 
-            <!-- Technical Skills -->
-            <section>
-                <h2><font color="#1a1a2e">Technical Skills</font></h2>
-                <hr color="#cccccc" size="1" />
-                <blockquote>
-                    <div>
-
-                        <article style="display:inline-block; vertical-align:top; width:22%; margin-right:2%;">
-                            <details open>
-                                <summary><strong>Languages</strong></summary>
-                                <ul type="square">
-                                    <li>Java (<abbr title="Data Structures and Algorithms">DSA</abbr>, <abbr title="Object-Oriented Programming">OOPs</abbr>)</li>
-                                    <li>Python</li>
-                                    <li><abbr title="Structured Query Language">MySQL</abbr> (Basics)</li>
-                                    <li>JavaScript</li>
-                                </ul>
-                            </details>
-                        </article>
-
-                        <article style="display:inline-block; vertical-align:top; width:22%; margin-right:2%;">
-                            <details open>
-                                <summary><strong>Frameworks &amp; Tools</strong></summary>
-                                <ul type="square">
-                                    <li>React.js</li>
-                                    <li>Bootstrap</li>
-                                    <li>Tailwind <abbr title="Cascading Style Sheets">CSS</abbr></li>
-                                    <li>Git &amp; GitHub</li>
-                                    <li>Figma</li>
-                                    <li>Linux (Ubuntu, Shell Scripting)</li>
-                                </ul>
-                            </details>
-                        </article>
-
-                        <article style="display:inline-block; vertical-align:top; width:22%; margin-right:2%;">
-                            <details open>
-                                <summary><strong>Web Technologies</strong></summary>
-                                <ul type="square">
-                                    <li><abbr title="HyperText Markup Language">HTML</abbr></li>
-                                    <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
-                                    <li><abbr title="Representational State Transfer API">REST APIs</abbr></li>
-                                </ul>
-                            </details>
-                        </article>
-
-                        <article style="display:inline-block; vertical-align:top; width:22%;">
-                            <details open>
-                                <summary><strong>Concepts</strong></summary>
-                                <ul type="square">
-                                    <li><abbr title="Data Structures and Algorithms">DSA</abbr></li>
-                                    <li>Object-Oriented Programming</li>
-                                    <li><abbr title="User Interface / User Experience">UI/UX</abbr> Design</li>
-                                    <li>Version Control</li>
-                                </ul>
-                            </details>
-                        </article>
-
-                    </div>
-                </blockquote>
-            </section>
-
-            <!-- Experience -->
-            <section>
-                <h2><font color="#1a1a2e">Experience</font></h2>
-                <hr color="#cccccc" size="1" />
-                <blockquote>
-                    <article>
-                        <h3>Data Science Micro-Intern</h3>
-                        <p><strong>Organization:</strong> <em>IBM SkillsBuild (Remote)</em></p>
-                        <p>
-                            <strong>Duration:</strong>
-                            <time datetime="2024-02">Feb 2024</time> &ndash; <time datetime="2024-03">March 2024</time>
-                        </p>
-                        <ul type="disc">
-                            <li>Analyzed real-world datasets with over 1,000 entries to uncover trends and actionable data patterns.</li>
-                            <li>Utilized <abbr title="A statistical programming language">R</abbr> for cleaning, transforming, and visualizing datasets.</li>
-                            <li><strong>Skills:</strong> Basic R Programming</li>
-                        </ul>
-                    </article>
-                </blockquote>
-            </section>
-
-            <!-- Projects -->
-            <section>
-                <h2><font color="#1a1a2e">Projects</font></h2>
-                <hr color="#cccccc" size="1" />
-                <blockquote>
+        <!-- Technical Skills -->
+        <section>
+            <h2>Technical Skills</h2>
+            <hr />
+            <blockquote>
+                <div>
 
                     <article>
-                        <h3>DelaySense</h3>
-                        <p><strong>Tech Stack:</strong> <em>React.js, Chart.js, Tailwind CSS, JavaScript, Bootstrap, Git</em></p>
-                        <p>
-                            <strong>Duration:</strong>
-                            <time datetime="2025-05">May 2025</time> &ndash; <time datetime="2025-06">June 2025</time>
-                        </p>
-                        <ul type="disc">
-                            <li>
-                                Logistics dashboard built at <mark><strong>Walmart Sparkathon</strong></mark> for reverse logistics.
-                                <a href="https://github.com/aryanpatel287/DelaySense.git" target="_blank">GitHub Link</a>
-                            </li>
-                            <li>Developed a real-time dashboard that visualized truck delays and estimated <abbr title="Stock Keeping Unit">SKU</abbr>-level financial losses across 1000+ products.</li>
-                            <li>Collaborated with a 4-member team to define loss metrics and suggest store-level actions.</li>
-                        </ul>
+                        <div class="skill-category">
+                            <h3><strong>Languages</strong></h3>
+                            <ul>
+                                <li>Java (<abbr title="Data Structures and Algorithms">DSA</abbr>, <abbr
+                                        title="Object-Oriented Programming">OOPs</abbr>)</li>
+                                <li>Python</li>
+                                <li><abbr title="Structured Query Language">MySQL</abbr> (Basics)</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
                     </article>
 
                     <article>
-                        <h3>MatePeak &ndash; Be A Solopreneur</h3>
-                        <p><strong>Tech Stack:</strong> <em>React.js, HTML, CSS, JavaScript, Bootstrap, Git</em></p>
-                        <p>
-                            <strong>Duration:</strong>
-                            <time datetime="2025">2025</time> &ndash; <time datetime="2025-05">May 2025</time>
-                        </p>
-                        <ul type="disc">
-                            <li>Student mentorship platform for personalized growth.</li>
-                            <li>Co-developed a student-first platform enabling 1:1 mentorship, webinars, and digital asset sales.</li>
-                            <li>Implemented 6+ responsive <abbr title="Minimum Viable Product">MVP</abbr> <abbr title="User Interface">UI</abbr> components using React.js and Tailwind CSS.</li>
-                            <li>Contributed to a 4-member team to build and iterate on key frontend features within academic project constraints.</li>
-                        </ul>
+                        <div class="skill-category">
+                            <h3><strong>Frameworks &amp; Tools</strong></h3>
+                            <ul>
+                                <li>React.js</li>
+                                <li>Bootstrap</li>
+                                <li>Tailwind <abbr title="Cascading Style Sheets">CSS</abbr></li>
+                                <li>Git &amp; GitHub</li>
+                                <li>Figma</li>
+                                <li>Linux (Ubuntu, Shell Scripting)</li>
+                            </ul>
+                        </div>
                     </article>
 
-                </blockquote>
-            </section>
+                    <article>
+                        <div class="skill-category">
+                            <h3><strong>Web Technologies</strong></h3>
+                            <ul>
+                                <li><abbr title="HyperText Markup Language">HTML</abbr></li>
+                                <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
+                                <li><abbr title="Representational State Transfer API">REST APIs</abbr></li>
+                            </ul>
+                        </div>
+                    </article>
 
-            <!-- Achievements -->
-            <section>
-                <h2><font color="#1a1a2e">Achievements</font></h2>
-                <hr color="#cccccc" size="1" />
-                <blockquote>
-                    <ul type="disc">
+                    <article>
+                        <div class="skill-category">
+                            <h3><strong>Concepts</strong></h3>
+                            <ul>
+                                <li><abbr title="Data Structures and Algorithms">DSA</abbr></li>
+                                <li>Object-Oriented Programming</li>
+                                <li><abbr title="User Interface / User Experience">UI/UX</abbr> Design</li>
+                                <li>Version Control</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+            </blockquote>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2>Experience</h2>
+            <hr />
+            <blockquote>
+                <article>
+                    <h3>Data Science Micro-Intern</h3>
+                    <p><strong>Organization:</strong> <em>IBM SkillsBuild (Remote)</em></p>
+                    <p>
+                        <strong>Duration:</strong>
+                        <time datetime="2024-02">Feb 2024</time> &ndash; <time datetime="2024-03">March 2024</time>
+                    </p>
+                    <ul>
+                        <li>Analyzed real-world datasets with over 1,000 entries to uncover trends and actionable data
+                            patterns.</li>
+                        <li>Utilized <abbr title="A statistical programming language">R</abbr> for cleaning,
+                            transforming, and visualizing datasets.</li>
+                        <li><strong>Skills:</strong> Basic R Programming</li>
+                    </ul>
+                </article>
+            </blockquote>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>Projects</h2>
+            <hr />
+            <blockquote>
+
+                <article>
+                    <h3>DelaySense</h3>
+                    <p><strong>Tech Stack:</strong> <em>React.js, Chart.js, Tailwind CSS, JavaScript, Bootstrap,
+                            Git</em></p>
+                    <p>
+                        <strong>Duration:</strong>
+                        <time datetime="2025-05">May 2025</time> &ndash; <time datetime="2025-06">June 2025</time>
+                    </p>
+                    <ul>
                         <li>
-                            <mark><strong>National Finalist</strong></mark> &ndash; Odoo Hackathon <time datetime="2025">2025</time>:
-                            Selected in the top 350 teams out of 19,000 participants for the final round.
+                            Logistics dashboard built at <strong>Walmart Sparkathon</strong> for reverse logistics.
+                            <a href="https://github.com/aryanpatel287/DelaySense.git" target="_blank">GitHub Link</a>
                         </li>
-                        <li>
-                            <strong>Contributor</strong> &ndash; GSSoC&apos;25 &amp; Open Source Connect India:
-                            Resolved <abbr title="User Interface / User Experience">UI/UX</abbr> issues in 3+ collaborative open-source projects.
+                        <li>Developed a real-time dashboard that visualized truck delays and estimated <abbr
+                                title="Stock Keeping Unit">SKU</abbr>-level financial losses across 1000+ products.</li>
+                        <li>Collaborated with a 4-member team to define loss metrics and suggest store-level actions.
                         </li>
                     </ul>
-                </blockquote>
-            </section>
+                </article>
 
-            <!-- Extracurricular Activities -->
-            <section>
-                <h2><font color="#1a1a2e">Extracurricular Activities</font></h2>
-                <hr color="#cccccc" size="1" />
-                <blockquote>
-                    <ul type="disc">
-                        <li>Contributed as a frontend developer in 5+ national-level hackathons, focusing on <abbr title="User Interface">UI</abbr> development and team collaboration.</li>
-                        <li>Coordinated the <em>AI No-Code Challenge</em> with 75+ participants, promoting creative use of <abbr title="Artificial Intelligence">AI</abbr> tools without coding.</li>
+                <article>
+                    <h3>MatePeak &ndash; Be A Solopreneur</h3>
+                    <p><strong>Tech Stack:</strong> <em>React.js, HTML, CSS, JavaScript, Bootstrap, Git</em></p>
+                    <p>
+                        <strong>Duration:</strong>
+                        <time datetime="2025">2025</time> &ndash; <time datetime="2025-05">May 2025</time>
+                    </p>
+                    <ul>
+                        <li>Student mentorship platform for personalized growth.</li>
+                        <li>Co-developed a student-first platform enabling 1:1 mentorship, webinars, and digital asset
+                            sales.</li>
+                        <li>Implemented 6+ responsive <abbr title="Minimum Viable Product">MVP</abbr> <abbr
+                                title="User Interface">UI</abbr> components using React.js and Tailwind CSS.</li>
+                        <li>Contributed to a 4-member team to build and iterate on key frontend features within academic
+                            project constraints.</li>
                     </ul>
-                </blockquote>
-            </section>
+                </article>
 
-        </main>
+            </blockquote>
+        </section>
 
-        <!-- FOOTER -->
-        <hr color="#1a1a2e" size="2" width="80%" align="center" />
+        <!-- Achievements -->
+        <section>
+            <h2>Achievements</h2>
+            <hr />
+            <blockquote>
+                <ul>
+                    <li>
+                        <strong>National Finalist</strong> &ndash; Odoo Hackathon <time datetime="2025">2025</time>:
+                        Selected in the top 350 teams out of 19,000 participants for the final round.
+                    </li>
+                    <li>
+                        <strong>Contributor</strong> &ndash; GSSoC&apos;25 &amp; Open Source Connect India:
+                        Resolved <abbr title="User Interface / User Experience">UI/UX</abbr> issues in 3+ collaborative
+                        open-source projects.
+                    </li>
+                </ul>
+            </blockquote>
+        </section>
 
-        <footer align="center">
-            <address>
-                <font size="2" color="#555555">
-                    &copy; <time datetime="2026">2026</time> Aryan Patel &nbsp;|&nbsp;
-                    <a href="mailto:aryanpatel.me@gmail.com">aryanpatel.me@gmail.com</a>
-                </font>
-            </address>
-        </footer>
+        <!-- Extracurricular Activities -->
+        <section>
+            <h2>Extracurricular Activities</h2>
+            <hr />
+            <blockquote>
+                <ul>
+                    <li>Contributed as a frontend developer in 5+ national-level hackathons, focusing on <abbr
+                            title="User Interface">UI</abbr> development and team collaboration.</li>
+                    <li>Coordinated the <em>AI No-Code Challenge</em> with 75+ participants, promoting creative use of
+                        <abbr title="Artificial Intelligence">AI</abbr> tools without coding.
+                    </li>
+                </ul>
+            </blockquote>
+        </section>
 
-    </font>
+    </main>
+
+    <!-- FOOTER -->
+    <hr />
+
+    <footer>
+        <address>
+            &copy; <time datetime="2026">2026</time> Aryan Patel &nbsp;|&nbsp;
+            <a href="mailto:aryanpatel.me@gmail.com">aryanpatel.me@gmail.com</a>
+        </address>
+    </footer>
+
+    </div>
 
 </body>
 
