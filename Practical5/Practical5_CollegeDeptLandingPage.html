@@ -18,181 +18,8 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <style>
-        /* ── Global ── */
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            color: #111;
-        }
-
-        /* ── Navbar ── */
-        .navbar-brand span {
-            font-size: 0.75rem;
-            display: block;
-            line-height: 1.1;
-            color: #555;
-        }
-
-        /* ── Hero / Jumbotron ── */
-        #hero {
-            background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 100%);
-            color: #fff;
-            padding: 100px 0 80px;
-        }
-
-        #hero .badge-label {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.12);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            border-radius: 20px;
-            font-size: 0.78rem;
-            letter-spacing: 1px;
-            padding: 4px 14px;
-            margin-bottom: 20px;
-        }
-
-        #hero h1 {
-            font-size: clamp(2rem, 5vw, 3rem);
-            font-weight: 700;
-            line-height: 1.2;
-        }
-
-        #hero p.lead {
-            color: rgba(255, 255, 255, 0.75);
-            max-width: 540px;
-        }
-
-        /* ── Section headers ── */
-        .section-label {
-            font-size: 0.72rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: #888;
-            margin-bottom: 8px;
-        }
-
-        /* ── Stat cards ── */
-        .stat-card {
-            border: 1px solid #e5e5e5;
-            border-radius: 10px;
-            padding: 28px 20px;
-            text-align: center;
-            transition: box-shadow 0.2s;
-        }
-
-        .stat-card:hover {
-            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-        }
-
-        .stat-card .stat-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #1b3a5c;
-        }
-
-        /* ── Program cards ── */
-        .program-card {
-            border: 1px solid #e5e5e5;
-            border-radius: 10px;
-            padding: 28px 24px;
-            height: 100%;
-            transition: border-color 0.2s, box-shadow 0.2s;
-        }
-
-        .program-card:hover {
-            border-color: #1b3a5c;
-            box-shadow: 4px 4px 0 #1b3a5c;
-        }
-
-        .program-card .icon-wrap {
-            width: 44px;
-            height: 44px;
-            background: #eef2f7;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
-            color: #1b3a5c;
-            margin-bottom: 16px;
-        }
-
-        /* ── Faculty cards ── */
-        .faculty-card {
-            border: 1px solid #e5e5e5;
-            border-radius: 10px;
-            padding: 24px 20px;
-            text-align: center;
-            height: 100%;
-        }
-
-        .faculty-card .avatar {
-            width: 64px;
-            height: 64px;
-            background: #eef2f7;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.6rem;
-            color: #1b3a5c;
-            margin: 0 auto 14px;
-        }
-
-        /* ── Labs ── */
-        .lab-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 14px;
-            padding: 16px 0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        .lab-item:last-child {
-            border-bottom: none;
-        }
-
-        .lab-icon {
-            width: 40px;
-            height: 40px;
-            background: #eef2f7;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            font-size: 1.1rem;
-            color: #1b3a5c;
-        }
-
-        /* ── Footer ── */
-        footer {
-            background: #0d1b2a;
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        footer h6 {
-            color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-size: 0.75rem;
-            margin-bottom: 14px;
-        }
-
-        footer a {
-            color: rgba(255, 255, 255, 0.6);
-            text-decoration: none;
-            font-size: 0.875rem;
-        }
-
-        footer a:hover {
-            color: #fff;
-        }
-
-        footer .divider {
-            border-color: rgba(255, 255, 255, 0.1);
-        }
-    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -205,12 +32,11 @@
 
             <!-- Brand -->
             <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                <div style="width:38px;height:38px;background:#1b3a5c;border-radius:8px;
-                            display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:0.9rem;">
+                <div class="navbar-logo">
                     GEC
                 </div>
                 <div>
-                    <strong style="font-size:0.95rem;">Dept. of Computer Engineering</strong>
+                    <strong class="navbar-brand-title">Dept. of Computer Engineering</strong>
                     <span>Government Engineering College, Dahod</span>
                 </div>
             </a>
@@ -231,8 +57,7 @@
                     <li class="nav-item"><a class="nav-link" href="#labs">Labs</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item ms-lg-2">
-                        <a class="btn btn-sm" href="../index.html"
-                           style="border:1px solid #ccc;border-radius:6px;padding:5px 14px;font-size:0.85rem;">
+                        <a class="btn btn-sm btn-back" href="../index.html">
                             ← Back to Home
                         </a>
                     </li>
@@ -265,8 +90,7 @@
                         <a href="#programs" class="btn btn-light fw-semibold px-4">
                             Explore Programs
                         </a>
-                        <a href="#contact" class="btn px-4"
-                           style="border:1px solid rgba(255,255,255,0.35);color:#fff;">
+                        <a href="#contact" class="btn btn-outline-hero px-4">
                             Get in Touch
                         </a>
                     </div>
@@ -278,25 +102,25 @@
                         <div class="col-6">
                             <div class="stat-card">
                                 <div class="stat-number">60+</div>
-                                <div class="text-muted" style="font-size:0.85rem;">Students per Batch</div>
+                                <div class="text-muted stat-label">Students per Batch</div>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="stat-card">
                                 <div class="stat-number">10+</div>
-                                <div class="text-muted" style="font-size:0.85rem;">Faculty Members</div>
+                                <div class="text-muted stat-label">Faculty Members</div>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="stat-card">
                                 <div class="stat-number">8</div>
-                                <div class="text-muted" style="font-size:0.85rem;">Specialised Labs</div>
+                                <div class="text-muted stat-label">Specialised Labs</div>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="stat-card">
                                 <div class="stat-number">100%</div>
-                                <div class="text-muted" style="font-size:0.85rem;">NAAC Accredited</div>
+                                <div class="text-muted stat-label">NAAC Accredited</div>
                             </div>
                         </div>
                     </div>
@@ -318,13 +142,13 @@
 
             <div class="row g-4">
                 <div class="col-md-6">
-                    <p class="text-secondary" style="line-height:1.8;">
+                    <p class="text-secondary about-text">
                         The Department of Computer Engineering at GEC Dahod is committed to providing
                         quality technical education in the field of computing and information technology.
                         We prepare students for careers in software development, data science, networking,
                         and emerging technologies.
                     </p>
-                    <p class="text-secondary" style="line-height:1.8;">
+                    <p class="text-secondary about-text">
                         Our curriculum is regularly updated to align with industry standards and
                         Gujarat Technological University (GTU) guidelines, ensuring graduates are
                         career-ready from day one.
@@ -336,28 +160,28 @@
                             <div class="p-3 bg-white rounded border text-center">
                                 <i class="bi bi-building fs-2 text-primary mb-2"></i>
                                 <div class="fw-semibold">GTU Affiliated</div>
-                                <div class="text-muted" style="font-size:0.82rem;">Gujarat Technological University</div>
+                                <div class="text-muted feature-desc">Gujarat Technological University</div>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="p-3 bg-white rounded border text-center">
                                 <i class="bi bi-award fs-2 text-primary mb-2"></i>
                                 <div class="fw-semibold">NAAC Accredited</div>
-                                <div class="text-muted" style="font-size:0.82rem;">Quality assured institution</div>
+                                <div class="text-muted feature-desc">Quality assured institution</div>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="p-3 bg-white rounded border text-center">
                                 <i class="bi bi-geo-alt fs-2 text-primary mb-2"></i>
                                 <div class="fw-semibold">Dahod, Gujarat</div>
-                                <div class="text-muted" style="font-size:0.82rem;">Tribal region education hub</div>
+                                <div class="text-muted feature-desc">Tribal region education hub</div>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="p-3 bg-white rounded border text-center">
                                 <i class="bi bi-people fs-2 text-primary mb-2"></i>
                                 <div class="fw-semibold">State Government</div>
-                                <div class="text-muted" style="font-size:0.82rem;">Govt. of Gujarat institution</div>
+                                <div class="text-muted feature-desc">Govt. of Gujarat institution</div>
                             </div>
                         </div>
                     </div>
@@ -385,8 +209,8 @@
                     <div class="program-card">
                         <div class="icon-wrap"><i class="bi bi-laptop"></i></div>
                         <h5 class="fw-semibold mb-1">B.E. Computer Engineering</h5>
-                        <p class="text-muted mb-3" style="font-size:0.88rem;">4-year undergraduate programme covering core CS fundamentals, web development, databases, and more.</p>
-                        <ul class="list-unstyled text-muted" style="font-size:0.85rem;">
+                        <p class="text-muted mb-3 program-desc">4-year undergraduate programme covering core CS fundamentals, web development, databases, and more.</p>
+                        <ul class="list-unstyled text-muted program-list">
                             <li><i class="bi bi-check2 text-success me-1"></i> Duration: 4 Years (8 Semesters)</li>
                             <li><i class="bi bi-check2 text-success me-1"></i> Intake: 60 Students</li>
                             <li><i class="bi bi-check2 text-success me-1"></i> Affiliated: GTU</li>
@@ -399,8 +223,8 @@
                     <div class="program-card">
                         <div class="icon-wrap"><i class="bi bi-cpu"></i></div>
                         <h5 class="fw-semibold mb-1">M.E. Computer Engineering</h5>
-                        <p class="text-muted mb-3" style="font-size:0.88rem;">2-year postgraduate programme with specialisations in advanced computing and research areas.</p>
-                        <ul class="list-unstyled text-muted" style="font-size:0.85rem;">
+                        <p class="text-muted mb-3 program-desc">2-year postgraduate programme with specialisations in advanced computing and research areas.</p>
+                        <ul class="list-unstyled text-muted program-list">
                             <li><i class="bi bi-check2 text-success me-1"></i> Duration: 2 Years (4 Semesters)</li>
                             <li><i class="bi bi-check2 text-success me-1"></i> Research-oriented</li>
                             <li><i class="bi bi-check2 text-success me-1"></i> Affiliated: GTU</li>
@@ -413,8 +237,8 @@
                     <div class="program-card">
                         <div class="icon-wrap"><i class="bi bi-journal-code"></i></div>
                         <h5 class="fw-semibold mb-1">Key Subjects</h5>
-                        <p class="text-muted mb-3" style="font-size:0.88rem;">Core subjects that form the backbone of the Computer Engineering curriculum.</p>
-                        <ul class="list-unstyled text-muted" style="font-size:0.85rem;">
+                        <p class="text-muted mb-3 program-desc">Core subjects that form the backbone of the Computer Engineering curriculum.</p>
+                        <ul class="list-unstyled text-muted program-list">
                             <li><i class="bi bi-dot text-primary"></i> Data Structures &amp; Algorithms</li>
                             <li><i class="bi bi-dot text-primary"></i> Operating Systems</li>
                             <li><i class="bi bi-dot text-primary"></i> Database Management Systems</li>
@@ -445,8 +269,8 @@
                     <div class="faculty-card">
                         <div class="avatar"><i class="bi bi-person"></i></div>
                         <h6 class="fw-semibold mb-0">Head of Department</h6>
-                        <p class="text-muted mb-2" style="font-size:0.82rem;">Computer Engineering</p>
-                        <span class="badge bg-light text-dark border" style="font-size:0.75rem;">Ph.D.</span>
+                        <p class="text-muted mb-2 faculty-role">Computer Engineering</p>
+                        <span class="badge bg-light text-dark border faculty-badge">Ph.D.</span>
                     </div>
                 </div>
 
@@ -454,8 +278,8 @@
                     <div class="faculty-card">
                         <div class="avatar"><i class="bi bi-person"></i></div>
                         <h6 class="fw-semibold mb-0">Professor</h6>
-                        <p class="text-muted mb-2" style="font-size:0.82rem;">Algorithms &amp; Theory</p>
-                        <span class="badge bg-light text-dark border" style="font-size:0.75rem;">M.E.</span>
+                        <p class="text-muted mb-2 faculty-role">Algorithms &amp; Theory</p>
+                        <span class="badge bg-light text-dark border faculty-badge">M.E.</span>
                     </div>
                 </div>
 
@@ -463,8 +287,8 @@
                     <div class="faculty-card">
                         <div class="avatar"><i class="bi bi-person"></i></div>
                         <h6 class="fw-semibold mb-0">Assistant Professor</h6>
-                        <p class="text-muted mb-2" style="font-size:0.82rem;">Web &amp; Mobile Dev</p>
-                        <span class="badge bg-light text-dark border" style="font-size:0.75rem;">M.E.</span>
+                        <p class="text-muted mb-2 faculty-role">Web &amp; Mobile Dev</p>
+                        <span class="badge bg-light text-dark border faculty-badge">M.E.</span>
                     </div>
                 </div>
 
@@ -472,8 +296,8 @@
                     <div class="faculty-card">
                         <div class="avatar"><i class="bi bi-person"></i></div>
                         <h6 class="fw-semibold mb-0">Assistant Professor</h6>
-                        <p class="text-muted mb-2" style="font-size:0.82rem;">Networks &amp; Security</p>
-                        <span class="badge bg-light text-dark border" style="font-size:0.75rem;">M.E.</span>
+                        <p class="text-muted mb-2 faculty-role">Networks &amp; Security</p>
+                        <span class="badge bg-light text-dark border faculty-badge">M.E.</span>
                     </div>
                 </div>
 
@@ -499,28 +323,28 @@
                         <div class="lab-icon"><i class="bi bi-pc-display"></i></div>
                         <div>
                             <h6 class="fw-semibold mb-0">Programming Lab</h6>
-                            <p class="text-muted mb-0" style="font-size:0.85rem;">60+ workstations for C, Java, Python and web programming practicals.</p>
+                            <p class="text-muted mb-0 lab-desc">60+ workstations for C, Java, Python and web programming practicals.</p>
                         </div>
                     </div>
                     <div class="lab-item">
                         <div class="lab-icon"><i class="bi bi-hdd-network"></i></div>
                         <div>
                             <h6 class="fw-semibold mb-0">Networking Lab</h6>
-                            <p class="text-muted mb-0" style="font-size:0.85rem;">Routers, switches and packet analysers for computer networking practicals.</p>
+                            <p class="text-muted mb-0 lab-desc">Routers, switches and packet analysers for computer networking practicals.</p>
                         </div>
                     </div>
                     <div class="lab-item">
                         <div class="lab-icon"><i class="bi bi-database"></i></div>
                         <div>
                             <h6 class="fw-semibold mb-0">Database Lab</h6>
-                            <p class="text-muted mb-0" style="font-size:0.85rem;">MySQL, Oracle and MongoDB environments for DBMS practicals and projects.</p>
+                            <p class="text-muted mb-0 lab-desc">MySQL, Oracle and MongoDB environments for DBMS practicals and projects.</p>
                         </div>
                     </div>
                     <div class="lab-item">
                         <div class="lab-icon"><i class="bi bi-robot"></i></div>
                         <div>
                             <h6 class="fw-semibold mb-0">AI &amp; ML Lab</h6>
-                            <p class="text-muted mb-0" style="font-size:0.85rem;">GPU-enabled systems for machine learning and deep learning experiments.</p>
+                            <p class="text-muted mb-0 lab-desc">GPU-enabled systems for machine learning and deep learning experiments.</p>
                         </div>
                     </div>
                 </div>
@@ -530,28 +354,28 @@
                         <div class="lab-icon"><i class="bi bi-phone"></i></div>
                         <div>
                             <h6 class="fw-semibold mb-0">Mobile App Lab</h6>
-                            <p class="text-muted mb-0" style="font-size:0.85rem;">Android development lab with emulators and physical test devices.</p>
+                            <p class="text-muted mb-0 lab-desc">Android development lab with emulators and physical test devices.</p>
                         </div>
                     </div>
                     <div class="lab-item">
                         <div class="lab-icon"><i class="bi bi-cloud"></i></div>
                         <div>
                             <h6 class="fw-semibold mb-0">Cloud Computing Lab</h6>
-                            <p class="text-muted mb-0" style="font-size:0.85rem;">AWS and Azure sandbox environments for cloud computing practicals.</p>
+                            <p class="text-muted mb-0 lab-desc">AWS and Azure sandbox environments for cloud computing practicals.</p>
                         </div>
                     </div>
                     <div class="lab-item">
                         <div class="lab-icon"><i class="bi bi-shield-lock"></i></div>
                         <div>
                             <h6 class="fw-semibold mb-0">Cyber Security Lab</h6>
-                            <p class="text-muted mb-0" style="font-size:0.85rem;">Dedicated environment for ethical hacking and network security practicals.</p>
+                            <p class="text-muted mb-0 lab-desc">Dedicated environment for ethical hacking and network security practicals.</p>
                         </div>
                     </div>
                     <div class="lab-item">
                         <div class="lab-icon"><i class="bi bi-book"></i></div>
                         <div>
                             <h6 class="fw-semibold mb-0">Digital Library</h6>
-                            <p class="text-muted mb-0" style="font-size:0.85rem;">Access to IEEE, ACM and Springer journals plus a physical book collection.</p>
+                            <p class="text-muted mb-0 lab-desc">Access to IEEE, ACM and Springer journals plus a physical book collection.</p>
                         </div>
                     </div>
                 </div>
@@ -571,11 +395,11 @@
                 <!-- College info -->
                 <div class="col-md-4">
                     <h6>GEC Dahod</h6>
-                    <p style="font-size:0.875rem;line-height:1.7;">
+                    <p class="footer-address">
                         Government Engineering College, Dahod<br />
                         Dahod – 389 151, Gujarat, India
                     </p>
-                    <p style="font-size:0.875rem;">
+                    <p class="footer-meta">
                         <i class="bi bi-globe me-2"></i>
                         <a href="https://www.gecdahod.ac.in" target="_blank">www.gecdahod.ac.in</a>
                     </p>
@@ -584,7 +408,7 @@
                 <!-- Quick links -->
                 <div class="col-md-4">
                     <h6>Quick Links</h6>
-                    <ul class="list-unstyled" style="font-size:0.875rem;line-height:2;">
+                    <ul class="list-unstyled footer-list">
                         <li><a href="#about">About Department</a></li>
                         <li><a href="#programs">Academic Programs</a></li>
                         <li><a href="#faculty">Faculty</a></li>
@@ -595,7 +419,7 @@
                 <!-- Contact -->
                 <div class="col-md-4">
                     <h6>Contact</h6>
-                    <ul class="list-unstyled" style="font-size:0.875rem;line-height:2;">
+                    <ul class="list-unstyled footer-list">
                         <li><i class="bi bi-envelope me-2"></i><a href="mailto:principal@gecdahod.ac.in">principal@gecdahod.ac.in</a></li>
                         <li><i class="bi bi-telephone me-2"></i>(02673) 220 XXX</li>
                         <li><i class="bi bi-geo-alt me-2"></i>Dahod, Gujarat – 389 151</li>
@@ -606,7 +430,7 @@
 
             <hr class="divider mt-4 mb-3" />
 
-            <div class="d-flex flex-wrap justify-content-between align-items-center" style="font-size:0.8rem;">
+            <div class="d-flex flex-wrap justify-content-between align-items-center footer-bottom">
                 <span>&copy; 2026 Government Engineering College, Dahod. All rights reserved.</span>
                 <span>Practical 5 &nbsp;·&nbsp; Aryan Patel &nbsp;·&nbsp; 230180107032</span>
             </div>
