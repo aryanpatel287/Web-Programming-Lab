@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-primary: #1f1f1f;
+    --text-secondary: #4c4c4c;
+    --border-soft: #e3ded2;
+    --accent: #2f5d50;
+}
+
+body {
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.resume-container {
+    overflow: hidden;
+}
+
+h1 {
+    font-size: clamp(1.9rem, 3.4vw, 2.5rem);
+    letter-spacing: 0.02em;
+}
+
+h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+}
+
+h3 {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+}
+
+p,
+li,
+a,
+time,
+address {
+    font-size: 0.98rem;
+}
+
+p,
+li,
+address {
+    color: var(--text-secondary);
+}
+
+main {
+    gap: 1.2rem !important;
+}
+
+.home-button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.home-button:hover {
+    background-color: #fff;
+    border-color: #444;
+}
+
+.home-button:active {
+    scale: 0.98;
+}
+
+.contact-info {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-info a {
+    color: var(--text-primary);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-soft);
+}
+
+header hr {
+    width: min(520px, 90%);
+    margin-top: 0.75rem;
+}
+
+section hr {
+    margin-top: 0.15rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.2rem 0;
+}
+
+blockquote {
+    margin: 0;
+    padding-left: 1rem;
+    border-left: 2px solid #efe9db;
+}
+
+article + article {
+    margin-top: 0.75rem;
+}
+
+ul {
+    margin-top: 0.35rem;
+    padding-left: 1.2rem;
+}
+
+li + li {
+    margin-top: 0.28rem;
+}
+
+.skill-category {
+    padding: 0.15rem 0;
+}
+
+.skill-category h3 {
+    color: #2a2a2a;
+}
+
+main a {
+    color: var(--accent);
+    text-underline-offset: 2px;
+}
+
+footer {
+    padding: 0.8rem 1rem 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: var(--accent);
+}
+
+@media (max-width: 640px) {
+    .home-button {
+        font-size: 1rem;
+    }
+
+    blockquote {
+        padding-left: 0.75rem;
+    }
+}
