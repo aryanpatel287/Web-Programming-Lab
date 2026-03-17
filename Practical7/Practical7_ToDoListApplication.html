@@ -1,0 +1,39 @@
+<!-- 
+    Name  : Patel Aryan Mahendrakumar
+    Roll  : 230180107032
+    Batch : A
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List Application</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="page">
+        <a class="back-link" href="../index.html">&#8592; Back to Home</a>
+
+        <section class="todo-card">
+            <h1>To-Do List Application</h1>
+            <p class="intro">Add tasks, mark them as complete, and remove them using JavaScript DOM manipulation.</p>
+
+            <div class="input-row">
+                <input type="text" id="taskInput" placeholder="Enter a task" />
+                <button type="button" onclick="addTask()">Add Task</button>
+            </div>
+
+            <p id="message" class="message">No tasks added yet.</p>
+
+            <ul id="taskList" class="task-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
