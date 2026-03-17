@@ -1,0 +1,95 @@
+<!-- 
+    Name  : Patel Aryan Mahendrakumar
+    Roll  : 230180107032
+    Batch : A
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator and EMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header class="page-header">
+        <div class="container">
+            <p><a class="back-link" href="../index.html">&#8592; Back to Home</a></p>
+            <h1>Simple Calculator and EMI Calculator</h1>
+            <p class="intro">This practical demonstrates JavaScript functions and onclick event handling to calculate results dynamically.</p>
+        </div>
+    </header>
+
+    <main class="container layout">
+        <section class="panel">
+            <h2>Simple Calculator</h2>
+
+            <div class="calculator-box">
+                <label for="calculatorDisplay">Display</label>
+                <input type="text" id="calculatorDisplay" value="0" readonly />
+
+                <div class="calculator-grid">
+                    <button type="button" class="secondary-button" onclick="clearCalculator()">AC</button>
+                    <button type="button" class="secondary-button" onclick="deleteLastCharacter()">DEL</button>
+                    <button type="button" class="operator-button" onclick="appendValue('%')">%</button>
+                    <button type="button" class="operator-button" onclick="appendValue('/')">/</button>
+
+                    <button type="button" onclick="appendValue('7')">7</button>
+                    <button type="button" onclick="appendValue('8')">8</button>
+                    <button type="button" onclick="appendValue('9')">9</button>
+                    <button type="button" class="operator-button" onclick="appendValue('*')">*</button>
+
+                    <button type="button" onclick="appendValue('4')">4</button>
+                    <button type="button" onclick="appendValue('5')">5</button>
+                    <button type="button" onclick="appendValue('6')">6</button>
+                    <button type="button" class="operator-button" onclick="appendValue('-')">-</button>
+
+                    <button type="button" onclick="appendValue('1')">1</button>
+                    <button type="button" onclick="appendValue('2')">2</button>
+                    <button type="button" onclick="appendValue('3')">3</button>
+                    <button type="button" class="operator-button" onclick="appendValue('+')">+</button>
+
+                    <button type="button" class="zero-button" onclick="appendValue('0')">0</button>
+                    <button type="button" onclick="appendValue('.')">.</button>
+                    <button type="button" class="equal-button" onclick="calculateResult()">=</button>
+                </div>
+            </div>
+
+            <div class="result-box">
+                <p class="result-label">Result</p>
+                <p id="simpleResult">Use the calculator buttons to perform operations.</p>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>EMI Calculator</h2>
+
+            <label for="loanAmount">Loan Amount</label>
+            <input type="number" id="loanAmount" placeholder="Enter loan amount" />
+
+            <label for="interestRate">Annual Interest Rate (%)</label>
+            <input type="number" id="interestRate" step="0.01" placeholder="Enter annual interest rate" />
+
+            <label for="loanTenure">Loan Tenure (Years)</label>
+            <input type="number" id="loanTenure" step="0.5" placeholder="Enter loan tenure in years" />
+
+            <div class="button-row single-action">
+                <button type="button" onclick="calculateEMI()">Calculate EMI</button>
+                <button type="button" class="secondary-button" onclick="resetEMICalculator()">Clear</button>
+            </div>
+
+            <div class="result-box">
+                <p class="result-label">Loan Summary</p>
+                <p id="emiResult">Enter loan details to calculate monthly EMI.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

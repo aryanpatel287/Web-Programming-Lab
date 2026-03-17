@@ -17,6 +17,7 @@ Web Programming lab practicals for Semester 6, Computer Engineering.
 | 3 | Student Event Registration Form | [Practical3/](Practical3/Practical3_StudentEventRegistration.html) |
 | 4 | Styled Resume | [Practical4/](Practical4/Practical1_HTMLResume.html) |
 | 5 | College Department Landing Page (Bootstrap) | [Practical5/](Practical5/Practical5_CollegeDepartmentLandingPage.html) |
+| 6 | Simple Calculator and EMI Calculator | [Practical6/](Practical6/Practical6_CalculatorAndEMICalculator.html) |
 
 ## Structure
 
@@ -28,7 +29,8 @@ Lab/
 ├── Practical2/
 ├── Practical3/
 ├── Practical4/
-└── Practical5/
+├── Practical5/
+└── Practical6/
 ```
 
 ## Hosting
