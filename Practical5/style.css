@@ -1,0 +1,49 @@
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.card-title {
+    color: #212529;
+}
+
+footer p {
+    margin-bottom: 0.25rem;
+}
+
+.card {
+    border-radius: 0.7rem;
+}
+
+img {
+    object-fit: cover;
+}
+
+.campus-img {
+    height: 220px;
+}
+
+.facilities-panel,
+.student-support-panel {
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+}
+
+.facilities-panel .list-group-item,
+.student-support-panel .list-group-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767.98px) {
+    .campus-img {
+        height: 200px;
+    }
+
+    .facilities-panel,
+    .student-support-panel {
+        height: auto;
+    }
+}
