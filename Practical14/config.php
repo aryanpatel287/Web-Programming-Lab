@@ -1,9 +1,9 @@
 <?php
-$DB_HOST = 'sql100.infinityfree.com';
-$DB_PORT = '3306';
-$DB_NAME = 'if0_41652976_wp_lab_practical13';
-$DB_USER = 'if0_41652976';
-$DB_PASS = 'Aryan2878980';
+$DB_HOST = 'YOUR_DB_HOST';
+$DB_PORT = 'YOUR_DB_PORT';
+$DB_NAME = 'YOUR_DB_NAME';
+$DB_USER = 'YOUR_DB_USER';
+$DB_PASS = 'YOUR_DB_PASSWORD';
 
 function ensurePractical14Schema(PDO $pdo): void
 {
