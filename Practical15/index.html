@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 15 - jQuery Image Carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="panel">
+            <h1>Responsive Image Carousel</h1>
+            <p class="hint">Slides transition automatically every 3 seconds. Use Next/Previous for manual navigation.</p>
+
+            <div class="carousel" id="carousel">
+                <div class="slides">
+                    <img src="images/TechFest-24_Crowds_39-scaled.jpg" alt="Tech Fest crowd" class="slide active">
+                    <img src="images/coding%20area.jpg" alt="Coding area" class="slide">
+                    <img src="images/project%20expo.webp" alt="Project expo" class="slide">
+                    <img src="images/cultural%20event.jpg" alt="Cultural event" class="slide">
+                </div>
+
+                <button type="button" id="prevBtn" class="nav-btn">Previous</button>
+                <button type="button" id="nextBtn" class="nav-btn">Next</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

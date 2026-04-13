@@ -1,0 +1,158 @@
+:root {
+    --bg: #f4f4f4;
+    --panel: #ffffff;
+    --text: #111111;
+    --muted: #444444;
+    --border: #d7d7d7;
+    --border-dark: #111111;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: linear-gradient(180deg, #fafafa 0%, var(--bg) 100%);
+    color: var(--text);
+}
+
+.page {
+    width: min(900px, 92%);
+    margin: 34px auto;
+}
+
+.narrow-page {
+    width: min(500px, 92%);
+}
+
+.panel {
+    min-height: 340px;
+    padding: 28px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-size: 28px;
+    line-height: 1.25;
+}
+
+.hint,
+.welcome {
+    margin: 0 0 16px;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.welcome {
+    font-size: 19px;
+    font-weight: 700;
+    color: #000000;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 11px;
+    border: 1px solid #cfcfcf;
+    border-radius: 7px;
+    background: #ffffff;
+    color: var(--text);
+    font: inherit;
+    font-size: 15px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #000000;
+    outline: 2px solid #d9d9d9;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 14px 0 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.checkbox-row input {
+    width: 16px;
+    height: 16px;
+}
+
+button,
+.button-link {
+    display: inline-block;
+    width: 100%;
+    margin-top: 14px;
+    padding: 12px 14px;
+    border: 1px solid var(--border-dark);
+    border-radius: 7px;
+    background: #111111;
+    color: #ffffff;
+    font: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+}
+
+button:hover,
+.button-link:hover {
+    background: #2a2a2a;
+}
+
+.button-link.secondary {
+    background: #ffffff;
+    color: var(--text);
+}
+
+.button-link.secondary:hover {
+    background: #f0f0f0;
+}
+
+.error {
+    margin: 14px 0 16px;
+    padding: 11px 12px;
+    border: 1px solid var(--border-dark);
+    border-radius: 7px;
+    background: #efefef;
+    font-weight: 600;
+}
+
+.actions {
+    margin-top: 18px;
+}
+
+.actions form {
+    margin: 0;
+}
+
+@media (max-width: 640px) {
+    .page {
+        width: min(520px, 94%);
+        margin: 22px auto;
+    }
+
+    .panel {
+        padding: 20px;
+        min-height: auto;
+    }
+}
