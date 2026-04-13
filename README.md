@@ -19,6 +19,7 @@ Web Programming lab practicals for Semester 6, Computer Engineering.
 | 5 | College Department Landing Page (Bootstrap) | [Practical5/](Practical5/Practical5_CollegeDepartmentLandingPage.html) |
 | 6 | Simple Calculator and EMI Calculator | [Practical6/](Practical6/Practical6_CalculatorAndEMICalculator.html) |
 | 7 | To-Do List Application | [Practical7/](Practical7/Practical7_ToDoListApplication.html) |
+| 8 | Registration Form Validation | [Practical8/](Practical8/Practical8_RegistrationFormValidation.html) |
 
 ## Structure
 
@@ -32,7 +33,8 @@ Lab/
 ├── Practical4/
 ├── Practical5/
 ├── Practical6/
-└── Practical7/
+├── Practical7/
+└── Practical8/
 ```
 
 ## Hosting
